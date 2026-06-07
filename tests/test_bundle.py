@@ -32,6 +32,39 @@ class BundleTests(unittest.TestCase):
             self.assertTrue(data["developer_instructions"])
             self.assertNotIn("model", data)
 
+    def test_full_migration_manifest(self) -> None:
+        manifest = json.loads(
+            (PLUGIN / "references" / "migration-manifest.json").read_text("utf-8")
+        )
+        self.assertEqual(manifest["release_target"], "0.2.0")
+        self.assertEqual(len(manifest["skills"]), 12)
+        self.assertEqual(len(manifest["department_guides"]), 8)
+        self.assertTrue(
+            all(item["source_exists_at_migration"] for item in manifest["skills"])
+        )
+        migrated_files = sum(len(item["files"]) for item in manifest["skills"])
+        self.assertEqual(migrated_files, 50)
+
+    def test_no_excluded_runtime_artifacts(self) -> None:
+        forbidden_suffixes = {".db", ".lock", ".log", ".env"}
+        forbidden_names = {
+            "memory.md",
+            "config.yaml",
+            "auth.json",
+            "auth.lock",
+        }
+        for path in PLUGIN.rglob("*"):
+            if not path.is_file():
+                continue
+            self.assertNotIn(path.suffix.lower(), forbidden_suffixes, path)
+            self.assertNotIn(path.name.lower(), forbidden_names, path)
+            self.assertFalse(
+                {part.lower() for part in path.parts}.intersection(
+                    {"sessions", "cache", "logs", "memories"}
+                ),
+                path,
+            )
+
     def test_agent_installer_creates_and_backs_up(self) -> None:
         script = PLUGIN / "scripts" / "install_agents.py"
         with tempfile.TemporaryDirectory() as temp:

@@ -18,7 +18,7 @@ knowledge, credentials and generated outputs in a separate data workspace.
 ## Install From Private GitHub
 
 ```powershell
-codex plugin marketplace add mayaincaztec/re-developer --ref v0.1.0 --sparse .agents/plugins --sparse plugins
+codex plugin marketplace add mayaincaztec/re-developer --ref v0.2.0 --sparse .agents/plugins --sparse plugins
 codex plugin add re-developer-suite@re-developer-suite-private
 ```
 
@@ -31,7 +31,7 @@ inside this repository.
 
 ## Pilot And Promotion
 
-1. Tag a semantic version such as `v0.1.0`.
+1. Tag a semantic version such as `v0.2.0`.
 2. Install that tag on the personal pilot machine.
 3. Run the checks in `tests/ACCEPTANCE.md`.
 4. Promote the same immutable tag to the company machine.
@@ -58,3 +58,14 @@ python -m unittest discover -s tests -v
 ```
 
 Validate the plugin with Codex's `plugin-creator` validator before release.
+
+## Migrated Business Library
+
+Version `0.2.0` contains the complete selected business library from the prior
+profiles: 12 detailed skills containing 50 files, their references, legal
+templates, checklists, DD and structuring workflows, plus eight department
+operating/library guides.
+
+The migration intentionally excludes memories, sessions, cache, logs,
+databases, model configuration, authentication, runtime files and `.env`
+files. See `plugins/re-developer-suite/references/migration-manifest.json`.

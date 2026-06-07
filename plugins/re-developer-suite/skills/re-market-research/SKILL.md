@@ -14,4 +14,4 @@ description: Use for Vietnam real-estate area studies, project and competitor sc
 7. Use `../../templates/market-comp-table.md` for comparable projects.
 8. Explain implications and remaining uncertainty; do not turn a small sample into a market-wide conclusion.
 
-Use the available Codex browser or web tools. Do not depend on OpenClaw vaults or a named Chrome Relay runtime.
+Use the available Codex browser or web tools and the current workspace contract.

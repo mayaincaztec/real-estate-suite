@@ -29,10 +29,21 @@ def main() -> int:
         "initialize-re-workspace",
         "dd-coordinator",
         "deal-structuring",
+        "deal-structuring-advisor",
+        "doc-renamer",
+        "legal-counsel",
+        "legal-writing",
+        "licensing-expert",
         "re-legal",
+        "re-legal-deliverable-templates",
+        "re-legal-intake-router",
+        "re-legal-operating-matrix",
+        "re-legal-skill-maintenance",
+        "re-legal-verification-rules",
         "re-investment-finance",
         "re-market-research",
         "re-project-design",
+        "vn-re-research",
     }
     if {path.parent.name for path in skills} != expected_skills:
         fail("skill set does not match expected v1 bundle")
@@ -59,11 +70,26 @@ def main() -> int:
             fail(f"{path} pins a model instead of inheriting")
             errors += 1
 
-    forbidden_suffixes = {".db", ".lock", ".log"}
+    forbidden_suffixes = {".db", ".lock", ".log", ".env"}
+    forbidden_names = {
+        "memory.md",
+        "config.yaml",
+        "auth.json",
+        "auth.lock",
+        "models_dev_cache.json",
+        "provider_models_cache.json",
+        "ollama_cloud_models_cache.json",
+        "context_length_cache.yaml",
+    }
     for path in root.rglob("*"):
-        if path.is_file() and path.suffix.lower() in forbidden_suffixes:
-            fail(f"forbidden runtime artifact: {path}")
-            errors += 1
+        if path.is_file():
+            if path.suffix.lower() in forbidden_suffixes or path.name.lower() in forbidden_names:
+                fail(f"forbidden runtime artifact: {path}")
+                errors += 1
+            lowered_parts = {part.lower() for part in path.parts}
+            if lowered_parts.intersection({"sessions", "cache", "logs", "memories"}):
+                fail(f"forbidden runtime directory content: {path}")
+                errors += 1
 
     if errors:
         print(f"Bundle check failed with {errors} error(s).", file=sys.stderr)

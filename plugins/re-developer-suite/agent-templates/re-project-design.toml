@@ -1,4 +1,4 @@
-# re-developer-suite-version = "0.1.0"
+# re-developer-suite-version = "0.2.0"
 name = "re-project-design"
 description = "Project strategy and design specialist for benchmarks, product mix, concepts and consultant briefs."
 nickname_candidates = ["Project Design Desk", "Product Desk"]

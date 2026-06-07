@@ -1,0 +1,405 @@
+{
+  "schema_version": 1,
+  "release_target": "0.2.0",
+  "excluded_categories": [
+    "memory",
+    "sessions",
+    "cache",
+    "logs",
+    "database",
+    "model configuration",
+    "authentication",
+    "runtime files",
+    ".env files"
+  ],
+  "skills": [
+    {
+      "name": "dd-coordinator",
+      "source": "re-hq/skills/legal/dd-coordinator",
+      "destination": "skills/dd-coordinator",
+      "files": [
+        {
+          "path": "skills/dd-coordinator/references/dd-document-request-templates.md",
+          "bytes": 10365,
+          "sha256": "71bc0f5f8f2e827a5eb7d599207c50de18e4dc175f957d0334035600779c8567"
+        },
+        {
+          "path": "skills/dd-coordinator/SKILL.md",
+          "bytes": 5625,
+          "sha256": "a6109843596b9a21ebd86ff1dfedecd157afe49ab7d788596e115fc575f61399"
+        }
+      ],
+      "source_exists_at_migration": true
+    },
+    {
+      "name": "deal-structuring-advisor",
+      "source": "re-hq/skills/legal/deal-structuring-advisor",
+      "destination": "skills/deal-structuring-advisor",
+      "files": [
+        {
+          "path": "skills/deal-structuring-advisor/references/structuring-tax-guide.md",
+          "bytes": 19580,
+          "sha256": "296348b3b1b0bc102cb85d42787256cafce3c1627e115dff3766555d63ea9dc2"
+        },
+        {
+          "path": "skills/deal-structuring-advisor/SKILL.md",
+          "bytes": 5885,
+          "sha256": "11d6a61914bb63ce87cd38463d97a48bf311de41bc4d6968b6a4a5ca7d694904"
+        }
+      ],
+      "source_exists_at_migration": true
+    },
+    {
+      "name": "doc-renamer",
+      "source": "re-legal/skills/legal/doc-renamer",
+      "destination": "skills/doc-renamer",
+      "files": [
+        {
+          "path": "skills/doc-renamer/references/dictionaries.md",
+          "bytes": 7336,
+          "sha256": "8ca8a62a7f4daab5c20b78b431cd96bc026ab55b100a9646b2df77ecdf3e514f"
+        },
+        {
+          "path": "skills/doc-renamer/SKILL.md",
+          "bytes": 11416,
+          "sha256": "fd6e16ff4e6ffac369d915828d907882b3c689b8fb5fae2a2557fac59f4c989e"
+        }
+      ],
+      "source_exists_at_migration": true
+    },
+    {
+      "name": "legal-counsel",
+      "source": "re-legal/skills/legal/legal-counsel",
+      "destination": "skills/legal-counsel",
+      "files": [
+        {
+          "path": "skills/legal-counsel/references/cp-closing-and-structuring-support.md",
+          "bytes": 1674,
+          "sha256": "a5aefce3bf62ff8f5c9111a0868cc70a45d2fd26463abdeea04fc213fba050cf"
+        },
+        {
+          "path": "skills/legal-counsel/references/legal-counsel-entry-points.md",
+          "bytes": 4886,
+          "sha256": "b2efdd6337ba49d730d241f089cda02e52144b4167163dc415af7e3c194bf6da"
+        },
+        {
+          "path": "skills/legal-counsel/references/ma-document-guides.md",
+          "bytes": 34629,
+          "sha256": "f9efa64f25fbda9152a4a9a8a889bcd8f4f089d6ec5f3e34de3cd134db68728b"
+        },
+        {
+          "path": "skills/legal-counsel/references/transaction-document-family-map.md",
+          "bytes": 1866,
+          "sha256": "267b71b799132076926c500c253f428affecd04a2994fa404f4732a51fd88d36"
+        },
+        {
+          "path": "skills/legal-counsel/SKILL.md",
+          "bytes": 11225,
+          "sha256": "450225d2ac08d76bf7e1883a253e20e8759360e557936bf5c43d72c6e1eb001b"
+        }
+      ],
+      "source_exists_at_migration": true
+    },
+    {
+      "name": "legal-writing",
+      "source": "re-legal/skills/legal/legal-writing",
+      "destination": "skills/legal-writing",
+      "files": [
+        {
+          "path": "skills/legal-writing/references/department-application.md",
+          "bytes": 2730,
+          "sha256": "5bd37fad66efe9bac5f7f44181428f77f90fbe2e1f6038c0b16512bb5ea62d68"
+        },
+        {
+          "path": "skills/legal-writing/references/hybrid-specialist-input-drafting.md",
+          "bytes": 1965,
+          "sha256": "2b8c2dd24b7bb86b52f280c7b636af504b934fba3a4a78d6f5ecafd6812f5338"
+        },
+        {
+          "path": "skills/legal-writing/references/hybrid-specialist-input-review.md",
+          "bytes": 1543,
+          "sha256": "0d867ac7d55e28323dfe6a9e1f93f5b0defbc36b22ccea06c87b58dfc1f48541"
+        },
+        {
+          "path": "skills/legal-writing/references/legal-drafting-bao-cao.md",
+          "bytes": 11690,
+          "sha256": "18e83d49558193128c1c73550437fbc95e1e7db62234c692f6859371534c84f5"
+        },
+        {
+          "path": "skills/legal-writing/references/legal-drafting-cong-van.md",
+          "bytes": 10840,
+          "sha256": "048d0ea5c8ea3fd3b661518a406b10f5d6669a6b209353292143e3af74f9b2ad"
+        },
+        {
+          "path": "skills/legal-writing/references/pdf-export-workflow.md",
+          "bytes": 2849,
+          "sha256": "2a0ff0323c224878afae57942b9200446fb36d40248108d033a23370b77d0506"
+        },
+        {
+          "path": "skills/legal-writing/references/review-legal-bao-cao.md",
+          "bytes": 13179,
+          "sha256": "3e0fb0bbccd323de45477d9fde2f6df9797c2515f434be84894647e3db665679"
+        },
+        {
+          "path": "skills/legal-writing/references/review-legal-cong-van.md",
+          "bytes": 11097,
+          "sha256": "7b75ac287e5a9af75de8dcab02e4ddfca7f40f52f2cd5b2dad79010ea1c364b9"
+        },
+        {
+          "path": "skills/legal-writing/SKILL.md",
+          "bytes": 9199,
+          "sha256": "d3dfcf7afe7099dcbd64d33e50996f4ee7f0429d9ead8ac285e1192217a5bb29"
+        }
+      ],
+      "source_exists_at_migration": true
+    },
+    {
+      "name": "licensing-expert",
+      "source": "re-legal/skills/legal/licensing-expert",
+      "destination": "skills/licensing-expert",
+      "files": [
+        {
+          "path": "skills/licensing-expert/references/licensing-entry-points.md",
+          "bytes": 3660,
+          "sha256": "a8cf39328d91ea945a21ac034455b1a18a6ffed4ad30e0f3be22b032ab93ea85"
+        },
+        {
+          "path": "skills/licensing-expert/references/project-stage-playbook.md",
+          "bytes": 2224,
+          "sha256": "4aa935a0a64eae897781d4143742c67806d7bdf70d4ce68e8a11a352b669bda1"
+        },
+        {
+          "path": "skills/licensing-expert/references/title-and-transferability-guide.md",
+          "bytes": 1933,
+          "sha256": "f97dbba30b19098951322d208414c2328c4baecb559b9c229193a26af00d8d3b"
+        },
+        {
+          "path": "skills/licensing-expert/references/vn-legal-texts-2025.md",
+          "bytes": 5487,
+          "sha256": "c401c7ea34743e734d5b1adfb225b64cbf935be686589d259300501eba5650a5"
+        },
+        {
+          "path": "skills/licensing-expert/references/vn-realestate-legal-framework.md",
+          "bytes": 8010,
+          "sha256": "2cdcdd5e1ab04e34e32ffbb6dde176a3fdc1415bc25d0c5d9c81eeb4982dae9f"
+        },
+        {
+          "path": "skills/licensing-expert/SKILL.md",
+          "bytes": 12785,
+          "sha256": "f6523d6df67f04286b31c544df435ed8870dacbb1dbdbbd020382a3dac03930b"
+        }
+      ],
+      "source_exists_at_migration": true
+    },
+    {
+      "name": "re-legal-deliverable-templates",
+      "source": "re-legal/skills/legal/re-legal-deliverable-templates",
+      "destination": "skills/re-legal-deliverable-templates",
+      "files": [
+        {
+          "path": "skills/re-legal-deliverable-templates/references/approval-matrix-template.md",
+          "bytes": 1024,
+          "sha256": "c95a8423084d35676a53c344124eca6f99f2dba763a16c7caf9582f2a235a30c"
+        },
+        {
+          "path": "skills/re-legal-deliverable-templates/references/blocker-memo-short-example.md",
+          "bytes": 1249,
+          "sha256": "fc53576ad643a563688039ccc80d08c2bf0002ef601e839ef8f9ffa42b615226"
+        },
+        {
+          "path": "skills/re-legal-deliverable-templates/references/blocker-memo-template.md",
+          "bytes": 1335,
+          "sha256": "1398c581aa6dbf8fafd571b7c4efe1d326f92e893a0947dd99a032afe2e3c0e2"
+        },
+        {
+          "path": "skills/re-legal-deliverable-templates/references/clause-issue-list-template.md",
+          "bytes": 852,
+          "sha256": "f7cb641c229aee331fc03cb83ede83461f1fb974b97699ad7819f8fc24292e17"
+        },
+        {
+          "path": "skills/re-legal-deliverable-templates/references/contract-review-memo-template.md",
+          "bytes": 1137,
+          "sha256": "a96515a3efbcf3c5a4f3bd1043808ec68d51ca55855bec400b24bba09ef16207"
+        },
+        {
+          "path": "skills/re-legal-deliverable-templates/references/cp-closing-issue-note-template.md",
+          "bytes": 1394,
+          "sha256": "048410ccf34caa299f7de88e84c45dda349276c53e5dbe10a188304f3b2e9bbe"
+        },
+        {
+          "path": "skills/re-legal-deliverable-templates/references/document-ops-report-short-example.md",
+          "bytes": 1265,
+          "sha256": "7db0b6c52fb6446951fae0d462cf82e48907b891d0c5feaa04f75cc8490154fc"
+        },
+        {
+          "path": "skills/re-legal-deliverable-templates/references/document-ops-report-template.md",
+          "bytes": 1214,
+          "sha256": "3bb92967f1b908dd2145b761303e6246a4deb9d4e7a275b1e4ec4282718308cc"
+        },
+        {
+          "path": "skills/re-legal-deliverable-templates/references/hybrid-legal-package-short-example.md",
+          "bytes": 1505,
+          "sha256": "f6b32b88d23e5a34c8af0ea019f34d4b1f2db712fb49a13cdae6462fec557b07"
+        },
+        {
+          "path": "skills/re-legal-deliverable-templates/references/hybrid-legal-package-template.md",
+          "bytes": 1635,
+          "sha256": "d4efe50d28d2da8f5b547f0ba420073f0641d69ce54af2b94f6d9e01ffc15597"
+        },
+        {
+          "path": "skills/re-legal-deliverable-templates/references/legal-question-list-template.md",
+          "bytes": 923,
+          "sha256": "f2670a0b21ffab078e6ebc50c715912fef1a4e4bcaadcd1493d00e1e172fd001"
+        },
+        {
+          "path": "skills/re-legal-deliverable-templates/references/legal-status-report-template.md",
+          "bytes": 1149,
+          "sha256": "44b49d1902a42a917fb324baa560a0b075e72fb13d51409decadeefbd36b1a1c"
+        },
+        {
+          "path": "skills/re-legal-deliverable-templates/references/permit-gap-list-template.md",
+          "bytes": 1055,
+          "sha256": "38a0f672d496c28254ace2117a7fde23f33415c515e5e3a3500d6c558e6a5750"
+        },
+        {
+          "path": "skills/re-legal-deliverable-templates/references/recommendation-memo-template.md",
+          "bytes": 1055,
+          "sha256": "d5ee44e578a9ac0c30696c999cf342b4c7df7e687bcc07aa378ddfeb63f72b9a"
+        },
+        {
+          "path": "skills/re-legal-deliverable-templates/SKILL.md",
+          "bytes": 6631,
+          "sha256": "cd3e2d4d114a47c6ceaca0c10208e851925f615d543d6135ed9a1cb4ffc53dd4"
+        }
+      ],
+      "source_exists_at_migration": true
+    },
+    {
+      "name": "re-legal-intake-router",
+      "source": "re-legal/skills/legal/re-legal-intake-router",
+      "destination": "skills/re-legal-intake-router",
+      "files": [
+        {
+          "path": "skills/re-legal-intake-router/SKILL.md",
+          "bytes": 10147,
+          "sha256": "85bf89b582f5ad02a504d0d473394e69416a820893ef287efe5f251be8f671af"
+        }
+      ],
+      "source_exists_at_migration": true
+    },
+    {
+      "name": "re-legal-operating-matrix",
+      "source": "re-legal/skills/legal/re-legal-operating-matrix",
+      "destination": "skills/re-legal-operating-matrix",
+      "files": [
+        {
+          "path": "skills/re-legal-operating-matrix/SKILL.md",
+          "bytes": 7557,
+          "sha256": "49351c5e3470963e3c9635020aba81a62cdaa59d68cf8181cb14944be47857b6"
+        }
+      ],
+      "source_exists_at_migration": true
+    },
+    {
+      "name": "re-legal-skill-maintenance",
+      "source": "re-legal/skills/legal/re-legal-skill-maintenance",
+      "destination": "skills/re-legal-skill-maintenance",
+      "files": [
+        {
+          "path": "skills/re-legal-skill-maintenance/references/bundle-governance-note.md",
+          "bytes": 2420,
+          "sha256": "062a28e4d714f6b09856975d5e1bf0506eae03f3ae0a313d4e61824223716955"
+        },
+        {
+          "path": "skills/re-legal-skill-maintenance/references/lean-regression-checklist.md",
+          "bytes": 2199,
+          "sha256": "f486b6b9c178df3637c61e10825e673fd9f7bab5635923e43cb8cefb260b8f3a"
+        },
+        {
+          "path": "skills/re-legal-skill-maintenance/references/maintenance-checklist.md",
+          "bytes": 2593,
+          "sha256": "17e507d0df8aa341aa7a854e938f3cb6c7a34eba1581136512b2f8525af44f79"
+        },
+        {
+          "path": "skills/re-legal-skill-maintenance/references/token-lean-profile-optimization.md",
+          "bytes": 3031,
+          "sha256": "09966035aa1f5ae13ea8c236719c5b51a64692f0f74e7007cc70fd36372dc199"
+        },
+        {
+          "path": "skills/re-legal-skill-maintenance/SKILL.md",
+          "bytes": 7925,
+          "sha256": "7c655ed2c538f1c683bb793617aa5a9ea075b9ed4ecf409ae91d96300313fe3a"
+        }
+      ],
+      "source_exists_at_migration": true
+    },
+    {
+      "name": "re-legal-verification-rules",
+      "source": "re-legal/skills/legal/re-legal-verification-rules",
+      "destination": "skills/re-legal-verification-rules",
+      "files": [
+        {
+          "path": "skills/re-legal-verification-rules/SKILL.md",
+          "bytes": 8120,
+          "sha256": "c528f4f03a3ec4258493fb82507e66a5c7e898819be414e5742cb0243294e7ef"
+        }
+      ],
+      "source_exists_at_migration": true
+    },
+    {
+      "name": "vn-re-research",
+      "source": "re-market-research/skills/real-estate-rd/vn-re-research",
+      "destination": "skills/vn-re-research",
+      "files": [
+        {
+          "path": "skills/vn-re-research/SKILL.md",
+          "bytes": 11104,
+          "sha256": "39ef8807fc99adecad0152fdb1e8175a0ffc3abe3a3e22fbc837bab8b70d3b49"
+        }
+      ],
+      "source_exists_at_migration": true
+    }
+  ],
+  "department_guides": [
+    {
+      "path": "references/department-guides/cross-profile-routing-playbook.md",
+      "bytes": 1933,
+      "sha256": "f96d0f180db7e2c1bea9f7e0b2bae5e875819a6b156178ee4133be7945f69f1a"
+    },
+    {
+      "path": "references/department-guides/re-hq-operating-guide.md",
+      "bytes": 2739,
+      "sha256": "19fb4464712a70150a685fcc59b94750c3438f3d9621a2f69011edcfddb9ccfa"
+    },
+    {
+      "path": "references/department-guides/re-investment-finance-operating-guide.md",
+      "bytes": 2548,
+      "sha256": "80a1fbe763557c0565c742c5606bb2aec5d3f08fe03f60f9ea6b1d3b0fd653dd"
+    },
+    {
+      "path": "references/department-guides/re-legal-library-readme.md",
+      "bytes": 6982,
+      "sha256": "212d5faa3c7d30928c7df7928cae942e7e91d6eb81d4c325773cfaeda396f4a6"
+    },
+    {
+      "path": "references/department-guides/re-legal-operating-guide.md",
+      "bytes": 3341,
+      "sha256": "e9254c3875e15fff260a4b4f57d42e26d558ba89a96362a9b182aead4e7f20e0"
+    },
+    {
+      "path": "references/department-guides/re-market-research-operating-guide.md",
+      "bytes": 2506,
+      "sha256": "b9e12d9e19e5bece028c1c7d30af681ef921b71b10c528906cb0ad25e66ccfee"
+    },
+    {
+      "path": "references/department-guides/re-project-design-operating-guide.md",
+      "bytes": 2410,
+      "sha256": "dc3fb62802c2a0a9ecd99940aaecbcea052d73ee90344ed91b57a5b1ae59cf43"
+    },
+    {
+      "path": "references/department-guides/vn-re-research-library-readme.md",
+      "bytes": 360,
+      "sha256": "6de7442ce46fec3c6141d3d300470f8d275537af606a573d8f539a7060b0aae1"
+    }
+  ]
+}

@@ -1,4 +1,4 @@
-# re-developer-suite-version = "0.1.0"
+# re-developer-suite-version = "0.2.0"
 name = "re-investment-finance"
 description = "Real-estate investment and finance specialist for underwriting, scenarios and IC recommendations."
 nickname_candidates = ["Investment Desk", "Underwriting Desk"]
