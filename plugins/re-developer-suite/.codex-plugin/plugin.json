@@ -1,0 +1,24 @@
+{
+  "name": "re-developer-suite",
+  "version": "0.1.0",
+  "description": "Vietnamese real-estate developer workflows for HQ coordination, legal, investment and finance, market research, and project design.",
+  "author": {
+    "name": "RE Developer Suite"
+  },
+  "repository": "https://github.com/mayaincaztec/re-developer",
+  "keywords": ["real-estate", "due-diligence", "investment", "legal", "vietnam"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "RE Developer Suite",
+    "shortDescription": "Điều phối nghiệp vụ Chủ đầu tư bất động sản.",
+    "longDescription": "Bộ workflow tiếng Việt cho RE-HQ và các phòng Legal, Investment & Finance, Market Research, Project & Design.",
+    "developerName": "RE Developer Suite",
+    "category": "Productivity",
+    "capabilities": ["Research", "Analysis", "Documents"],
+    "defaultPrompt": [
+      "Dùng RE-HQ để phân luồng yêu cầu này.",
+      "Điều phối due diligence cho thương vụ này.",
+      "Cài đặt các RE custom agents trên máy này."
+    ]
+  }
+}

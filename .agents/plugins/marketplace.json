@@ -1,0 +1,20 @@
+{
+  "name": "re-developer-suite-private",
+  "interface": {
+    "displayName": "RE Developer Suite Private"
+  },
+  "plugins": [
+    {
+      "name": "re-developer-suite",
+      "source": {
+        "source": "local",
+        "path": "./plugins/re-developer-suite"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
