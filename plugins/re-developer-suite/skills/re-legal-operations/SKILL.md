@@ -55,6 +55,8 @@ Doctrine đầy đủ: `../../references/routing-map.md`. Case hybrid: owner đi
 | Rename / inventory / classify / move nhẹ | `re-legal-doc-renamer` | — | `document-ops-report-template` | `re-legal-verification-rules` nếu cần chốt | thành data room orchestration / multi-team flow |
 | Hybrid legal input — project stream | `re-legal-licensing` | `re-legal-writing` hoặc — | `hybrid-legal-package-template` / `blocker-memo-template` / `legal-question-list-template` | `re-legal-verification-rules` | package phình thành multi-owner tracker / DD coordination |
 | Hybrid legal input — corporate / transaction stream | `re-legal-counsel` | `re-legal-writing` hoặc — | `hybrid-legal-package-template` / `cp-closing-issue-note-template` / `legal-question-list-template` | `re-legal-verification-rules` | package phình thành closing coordination / structuring framework |
+| Transaction legal DD (bộ tài liệu / data room) | `re-legal-counsel` | `re-legal-licensing` (project-legal), `re-legal-writing` | `transaction-dd-findings-memo` (+ `clause-review-grid`, `material-contract-schedule`) | `re-legal-verification-rules` | điều phối DD đa stream → `re-inv-dd-coordinator` |
+| Soạn văn kiện phê duyệt nội bộ (nghị quyết/biên bản) | `re-legal-counsel` | `re-legal-writing` | `corporate-resolution-vn` | `re-legal-verification-rules` | quyết định cấu trúc/giao dịch tổng thể → `re-inv-deal-structuring` |
 
 Template nằm ở `../../templates/`.
 
@@ -81,6 +83,8 @@ Template nằm ở `../../templates/`.
 - `hybrid-legal-package-template` — output gửi owner điều phối deal (`RE-Investment-Finance`, hoặc `RE-HQ` ở tầm executive) để nhúng vào DD / structuring / IC memo; format issue → basis → impact → blocker/confirm-point → next step → owner boundary.
 - `blocker-memo-template` — một blocker pháp lý dự án đang chặn transferability, commercialization, DD conclusion hoặc structuring path.
 - `cp-closing-issue-note-template` — CP, closing deliverables, signing–closing gap, legal dependency ảnh hưởng việc đóng giao dịch.
+- `transaction-dd-findings-memo` — trích issue pháp lý từ bộ tài liệu giao dịch theo nhóm + materiality + severity (legal input cho `re-inv-dd-coordinator`); kèm `clause-review-grid` (rà hàng loạt hợp đồng) và `material-contract-schedule` (danh mục HĐ trọng yếu).
+- `corporate-resolution-vn` — nghị quyết/biên bản HĐQT/ĐHĐCĐ/HĐTV phê duyệt giao dịch theo Luật Doanh nghiệp 2020 (luôn DRAFT để rà soát).
 - `document-ops-report-template` — chốt kết quả document ops có cấu trúc.
 
 Bản nháp nhanh có thể neo theo: `hybrid-legal-package-short-example.md`, `blocker-memo-short-example.md`, `document-ops-report-short-example.md` (cùng thư mục `../../templates/`).

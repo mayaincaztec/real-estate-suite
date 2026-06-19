@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.10.0 - 2026-06-20
+
+### re-legal-counsel upgrade — integrate corporate-legal (Claude for Legal) methodology
+Reviewed Anthropic's `corporate-legal` plugin (github.com/anthropics/claude-for-legal) and integrated the parts that fit a specialist contract/transaction lawyer, adapted to Vietnamese RE/M&A. Coordination-only skills (closing-checklist, deal-team-summary, integration-management, entity-compliance, dataroom-watcher) were deliberately NOT integrated — those stay with `re-inv` (deal lifecycle owner); AI-tool-handoff and plugin infra were out of scope.
+
+- New references under `re-legal-counsel`: `transaction-dd-playbook.md` (document-set legal DD adapted from diligence-issue-extraction + tabular-review — issue categories, materiality, 4-level severity, finding format, source attribution via tvpl), `transaction-clause-checklists.md` (change-of-control / assignment / MAC / MFN / indemnity / termination / CP / successor-liability), `corporate-approvals-vn.md` (board/shareholder resolutions & minutes under Luật Doanh nghiệp 2020, with conflict-of-interest and major-action gates).
+- `re-legal-counsel` SKILL: added Mode 4 (transaction legal DD on a document set) and Mode 5 (drafting corporate approval instruments); enriched contract-review with the clause taxonomy and tabular review; new output shapes; broadened description.
+- New templates: `transaction-dd-findings-memo`, `clause-review-grid`, `material-contract-schedule`, `corporate-resolution-vn`.
+- Boundary kept clean: project-legal DD (land/zoning/permits) defers to `re-legal-licensing`; DD coordination defers to `re-inv-dd-coordinator` (which now points to the playbook); CP/closing actions hand off to cp-closing-issue-note.
+- Anti-drift sync: `re-legal-operations` matrix + template map and `re-legal-verification-rules` (new deliverable checks J/K/L) updated; link-integrity and bundle tests green.
+
 ## 0.9.0 - 2026-06-11
 
 ### Department-prefix renaming (22 → 21 skills)

@@ -111,6 +111,30 @@ Phải kiểm tra:
 - đã phân biệt phần việc còn thuộc `RE-Legal` với phần cần `RE-HQ` điều phối chưa;
 - legal question list hoặc missing-docs note có bị phình thành tracker nhiều owner không.
 
+### J. Transaction DD Findings Memo (bộ tài liệu giao dịch)
+Phải kiểm tra:
+- đã nêu **coverage data room + ngưỡng materiality** (nguồn ngưỡng, không tự bịa) và **gaps** chưa;
+- mỗi finding đủ: mức độ (🔴🟠🟡🟢) · trích nguyên văn (Quote-First) · kiểm chứng luật qua `tvpl` hoặc caveat · khuyến nghị · owner;
+- **không tự lấp khoảng trống** bằng web/model knowledge khi hồ sơ mỏng;
+- project-legal (đất/quy hoạch/permit) đã kéo `re-legal-licensing`, không tự kết luận;
+- cờ successor liability + CP/closing đã bàn giao đúng (cp-closing-issue-note / `re-inv-dd-coordinator`);
+- output là **legal input**, không phình thành DD report tổng (đó là việc của `re-inv-dd-coordinator`).
+
+### K. Clause Review Grid (tabular review)
+Phải kiểm tra:
+- schema cột đã confirm + chạy mẫu trước khi rà toàn bộ chưa;
+- mỗi ô có **trích nguyên văn ≤125 ký tự + vị trí**; ô không lấy được nguồn để `cần_review` + `thiếu_trích_dẫn`;
+- đã spot-check ≥3–5 hàng/cột (hoặc 10%) đối chiếu ký tự; lệch → `lệch_trích_dẫn`;
+- nhắc rõ mỗi ô là **đầu mối, không phải kết luận**.
+
+### L. Văn kiện phê duyệt nội bộ (corporate resolution)
+Phải kiểm tra:
+- đúng cơ quan quyết định theo loại hình DN; thẩm quyền + tỷ lệ thông qua đã kiểm chứng qua `tvpl` + điều lệ;
+- người có liên quan đã loại khỏi biểu quyết (nếu áp dụng);
+- điều kiện tiến hành họp đủ (không tạo văn bản hàm ý cuộc họp hợp lệ khi chưa đủ);
+- quyết nghị nêu chính xác hành động/giá trị/đối tác/ủy quyền ký;
+- major action đã gắn cờ rà soát luật sư; bản giữ trạng thái **DRAFT**.
+
 ## Dấu hiệu chuyển cấp
 
 Phải cân nhắc route ra ngoài `RE-Legal` (deal lifecycle → `RE-Investment-Finance`; tổng hợp đa phòng cấp executive → `RE-HQ`) hoặc ít nhất ghi chú rõ ranh giới scope khi có các dấu hiệu sau:
