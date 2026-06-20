@@ -1,11 +1,11 @@
 {
-  "name": "re-developer",
+  "name": "re-developer-claude",
   "owner": {
     "name": "mayaincaztec"
   },
   "metadata": {
     "description": "RE Developer Suite — Vietnamese real-estate developer operating model (Claude Code / Cowork).",
-    "version": "0.11.0"
+    "version": "0.11.1"
   },
   "plugins": [
     {

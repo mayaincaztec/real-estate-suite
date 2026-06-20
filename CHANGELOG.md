@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.11.1 - 2026-06-20
+
+- Renamed the marketplace `name` in `.claude-plugin/marketplace.json` from `re-developer` to `re-developer-claude` so it matches the repository name and the UI tab label (removes a source of marketplace-update confusion in the Claude/Cowork app). The plugin id therefore becomes `re-developer-suite@re-developer-claude`; remove and re-add the marketplace (prefer the `mayaincaztec/re-developer-claude` shorthand over the raw `.git` URL), then reinstall the plugin. No skill/content changes.
+
 ## 0.11.0 - 2026-06-20
 
 ### re-inv: integrate corporate-legal coordination capabilities (the ones that fit the deal lifecycle)
