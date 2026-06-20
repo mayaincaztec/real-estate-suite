@@ -27,6 +27,8 @@ Không dùng cho: thay phân tích đầu tư; thay quyết định khi task cò
 | Báo cáo đầy đủ / IC memo | `re-inv-full-report` | `re-legal-licensing`+`re-legal-counsel`+`tvpl`, `re-rnd` | `full-investment-report` + `investment-memo` | `re-inv-verification-rules` | nếu cần duyệt đa phòng cấp executive → `RE-HQ` |
 | Cấu trúc deal + LOI | `re-inv-deal-structuring` | `re-legal-counsel`/`re-legal-licensing`, `re-inv-feasibility-study` | `loi` + `loi-and-offer-guide` | `re-inv-verification-rules` | nếu cấu trúc cần trọng tài đa phòng → `RE-HQ` |
 | Điều phối DD | `re-inv-dd-coordinator` | `RE-Legal` (`re-legal-licensing`/`re-legal-counsel`), các stream khác | `dd-executive-summary` + `finding` | `re-inv-verification-rules` | quyết định đa phòng cấp executive → `RE-HQ` |
+| Closing checklist (CP/CD) | `re-inv-dd-coordinator` | `re-legal-counsel` (cp-closing, material-contract-schedule) | `closing-checklist` | `re-inv-verification-rules` | chứng nhận sẵn-sàng-closing là kết luận pháp lý → `RE-Legal` |
+| Deal team briefing (theo altitude) | `re-inv` | findings từ `re-inv-dd-coordinator` | `deal-team-briefing` | `re-inv-verification-rules` | tổng hợp đa phòng cấp executive / trọng tài → `RE-HQ` |
 
 > Template nằm ở `../../templates/` trừ FS spec (`re-inv-feasibility-study/references/`) và LOI guide (`re-inv-deal-structuring/references/`).
 

@@ -61,7 +61,17 @@ Investment chốt assumption và kết luận đầu tư; specialist chỉ phát
 - FS model (.xlsx) + tóm tắt return
 - Full investment report + IC memo
 - Structuring recommendation + LOI
-- DD coordination snapshot + findings summary
+- DD coordination snapshot + findings summary + closing checklist
+- Deal team briefing (theo tầng đối tượng — xem dưới)
+
+## Deal team briefing (tóm tắt theo altitude)
+
+Khi cần brief tiến độ deal/DD cho từng đối tượng, dùng `../../templates/deal-team-briefing.md` với 3 tầng chi tiết khác nhau:
+- **Board / Executive Sponsor** — 3–5 issue trọng yếu + tác động giá/cấu trúc + quyết định cần chốt (owner/deadline) + delta; lược chi tiết nhóm và finding xanh.
+- **Deal Lead** — thêm toàn bộ finding 🔴/🟡, bảng coverage, yêu cầu bổ sung, dự báo 72h.
+- **Working Team** — finding chi tiết đầy đủ, trạng thái theo nhóm, gaps.
+
+Briefing chỉ **surface quyết định**, không tự quyết thay deal team. Phân ranh với `RE-HQ`: briefing này nằm **trong phạm vi một deal** (tầng Board ở đây là sponsor của deal); còn **tổng hợp đa phòng ban cấp executive / trọng tài xung đột** mới thuộc `RE-HQ`.
 
 ## Chuyển cấp (Escalation) về RE-HQ
 

@@ -1,5 +1,16 @@
 # Changelog
 
+## 0.11.0 - 2026-06-20
+
+### re-inv: integrate corporate-legal coordination capabilities (the ones that fit the deal lifecycle)
+Follow-up to v0.10.0. Of the corporate-legal skills excluded from re-legal-counsel as "coordination", integrated the three that belong to the investment deal-lifecycle owner; intentionally left out the two that don't.
+
+- **closing-checklist** → `re-inv-dd-coordinator` (new Bước 7 + output shape): CP/CD tracker with id, category, responsible, due, status, blocking, source; self-updates from DD findings + `material-contract-schedule` + `cp-closing-issue-note`; dedup on (counterparty + action type); critical-path/at-risk logic; 3-tier status report. New template `templates/closing-checklist.md`.
+- **deal-team-summary** → `re-inv` entry (new briefing section + output): audience-tiered briefing (Board/Exec, Deal Lead, Working Team) with altitude-appropriate detail; explicit boundary vs `RE-HQ` (within-deal briefing, not cross-department executive synthesis). New template `templates/deal-team-briefing.md`.
+- **dataroom-watcher** → only the *capability* folded into `re-inv-dd-coordinator`'s data room tracker as on-demand **new-upload triage** (detect new uploads, classify by DRL category, flag high-priority Material Contracts / Litigation / IP); dropped the scheduled-cron mechanism (the suite has no cron agents). Flags for human review only — reading/extraction stays with `re-legal-counsel`.
+- **Not integrated (deliberate):** `integration-management` (post-closing — outside the suite's declared scope) and `entity-compliance` (ongoing corporate filing admin — not deal lifecycle, no clean home). Both are scope-expansion decisions, parked.
+- Anti-drift sync: `re-inv-operating-matrix` (2 new rows) + `re-inv-verification-rules` (closing-checklist + deal-team-briefing checks) + dd-coordinator description; tests green.
+
 ## 0.10.0 - 2026-06-20
 
 ### re-legal-counsel upgrade — integrate corporate-legal (Claude for Legal) methodology

@@ -43,6 +43,8 @@ Nếu quyết định thực chất cần tổng hợp đa phòng cấp executiv
 - **Full report / IC memo**: thesis + cases + conditions + owners; số tie-out FS.
 - **Structuring / LOI**: option có tiêu chí so sánh; LOI nêu rõ điều kiện, tính ràng buộc/không ràng buộc, CP.
 - **DD summary**: go/conditional/no-go + deal-breakers + owners + missing items.
+- **Closing checklist**: mỗi CP/CD có id + nhóm + phụ trách + hạn + trạng thái + blocking + nguồn (Điều/khoản); dedup theo (counterparty + loại hành động); critical path tính đúng (`hạn − hôm nay < ước tính` = at-risk); không tự chứng nhận "sẵn sàng closing" (đó là kết luận pháp lý → `RE-Legal`).
+- **Deal team briefing**: đúng altitude của tầng đối tượng (Board/Exec gọn 3–5 issue + quyết định; Working Team mới full chi tiết); surface quyết định, không tự quyết thay deal team; phân ranh rõ với `RE-HQ` (briefing trong một deal, không phải tổng hợp đa phòng executive).
 
 ## Mẫu kiểm tra nhanh
 

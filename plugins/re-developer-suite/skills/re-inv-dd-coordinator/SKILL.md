@@ -1,6 +1,6 @@
 ---
 name: re-inv-dd-coordinator
-description: Use to coordinate multi-workstream due diligence (DD) in RE-Investment-Finance — DD scope, document request list, data room tracker, clarification log, issue tracker, and the consolidated DD findings report; pulls RE-Legal specialists only for deep legal findings.
+description: Use to coordinate multi-workstream due diligence (DD) in RE-Investment-Finance — DD scope, document request list, data room tracker with new-upload triage, clarification log, issue tracker, closing checklist (conditions precedent and closing deliverables), and the consolidated DD findings report; pulls RE-Legal specialists only for deep legal findings.
 version: 3.0.0
 license: MIT
 ---
@@ -62,12 +62,15 @@ Chốt tối thiểu:
 ### Bước 2 — Dựng control layer
 Thiết lập các lớp điều phối phù hợp:
 - DRL;
-- data room tracker;
+- data room tracker (kèm **new-upload triage** — xem dưới);
 - clarification tracker;
 - issue tracker;
+- closing checklist (CP/CD — xem Bước 7);
 - DD timeline / milestone view.
 
 Không yêu cầu mọi task đều phải có đủ tất cả lớp; chọn theo quy mô deal.
+
+**New-upload triage (on-demand, không phải cron):** khi data room có tài liệu mới, đối chiếu thời điểm rà gần nhất → liệt kê tài liệu thêm từ lần trước; map vào nhóm theo DRL; **cờ ưu tiên cao** cho 3 nhóm: hợp đồng trọng yếu (Material Contracts), tranh chấp/tố tụng (Litigation), sở hữu trí tuệ (IP). Output: số tài liệu mới + breakdown theo nhóm ưu tiên (kèm tên file) + phần còn lại theo nhóm. Skill này **chỉ cờ để người rà**, không đọc nội dung — đọc & trích issue là việc của `re-legal-counsel` (theo `transaction-dd-playbook`).
 
 ### Bước 3 — Phân luồng yêu cầu theo workstream
 Tách rõ:
@@ -102,6 +105,14 @@ Kết luận rõ:
 - missing items còn treo;
 - action owners sau DD.
 
+### Bước 7 — Closing checklist (CP/CD)
+Khi deal tiến tới ký/closing, dựng **closing checklist** theo `../../templates/closing-checklist.md`:
+- **CP** (điều kiện tiên quyết): regulatory approval, third-party consent, điều kiện hợp đồng — mỗi item có id (CP-###), nhóm, phụ trách, hạn, trạng thái, blocking, nguồn (Điều/khoản), ước tính hoàn tất.
+- **CD** (deliverables tại closing): chứng nhận, opinion, nghị quyết HĐQT/ĐHĐCĐ, giấy tờ.
+- **Tự cập nhật từ** findings DD (mọi finding hàm ý hành động trước closing), `material-contract-schedule` (CoC/anti-assignment) và `cp-closing-issue-note` của `re-legal`. **Dedup theo (counterparty + loại hành động)**, không theo tên tự do.
+- **Critical path:** với item blocking, `(hạn − hôm nay) < ước tính hoàn tất` → at-risk; báo cáo 3 tầng 🔴 at-risk / 🟡 đúng tiến độ / ✅ hoàn tất.
+- Chứng nhận "sẵn sàng closing" là kết luận pháp lý → kéo `re-legal`; coordinator chỉ giữ tracker + báo cáo trạng thái.
+
 ## Dạng đầu ra
 
 ### 1. DD Coordination Snapshot
@@ -124,6 +135,18 @@ Kết luận rõ:
 - Legal findings owner: `RE-Legal` / specialist tương ứng
 - Other workstream owners: ...
 - Next actions: ...
+```
+
+### 3. Closing Checklist Status
+Theo `../../templates/closing-checklist.md` — báo cáo 3 tầng (🔴 blocking at-risk / 🟡 blocking on-track / ✅ complete) + critical path + days-to-close + đếm theo trạng thái.
+
+### 4. New-Upload Triage
+```md
+## Data room — tài liệu mới (từ [ngày rà trước])
+- Tổng mới: [n]
+- Ưu tiên cao: Material Contracts [..files], Litigation [..files], IP [..files]
+- Còn lại theo nhóm: ...
+- Cần `re-legal-counsel` đọc & trích issue: ...
 ```
 
 ## Deal dossier
