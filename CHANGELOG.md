@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.19.0 - 2026-07-02
+
+### DD process: buy-side question bank (from "Ask Smarter — 101 Questions for the Buy-Side")
+Integrated Herman, Henry & Dominic's *"Ask Smarter"* handbook (May 2026 ed.) into the DD process.
+- New reference `re-inv-dd-coordinator/references/buyside-dd-question-bank.md`: all 101 buy-side questions in concise Vietnamese, grouped by the book's 15 chapters, each chapter mapped to a DD workstream and owner (`re-legal-counsel` / `re-legal-licensing` / deal team). Explains the source's 5-part entry anatomy (Question / Why ask / Clean answer / Red flags / Contract impact) and how to run it: kickoff question set per workstream, clarification log, management Q&A, red flag → issue tracker, contract impact → SPA clause requests.
+- `re-inv-dd-coordinator` SKILL.md (v3.1.0): Bước 2 control layer now points clarification tracker / Q&A prep at the question bank; References updated. `dd-document-request-templates.md` §3 marks its short bank as the quick-start subset.
+- Optional wiring into `re-legal-counsel` (v2.2.1): Mode 4 points at the bank's Legal & Corporate chapters (I, II, V, VIII, XI, XII, XV) for legal-stream seller questions, with Contract impact feeding `ma-clause-playbook-vn.md`.
+Full 101 entries (verbatim questions, clean answers, red-flag blocks) stay in the gitignored source under `assets/re-legal-counsel/`.
+
 ## 0.18.0 - 2026-07-02
 
 ### re-legal-counsel: 50 M&A traps catalog + 50 negotiation briefs (from two more HHD handbooks)

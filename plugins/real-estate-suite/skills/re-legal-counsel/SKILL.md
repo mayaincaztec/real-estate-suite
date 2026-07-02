@@ -1,7 +1,7 @@
 ---
 name: re-legal-counsel
 description: Use for contract and transaction legal work in RE-Legal — contract review, clause risk, negotiation positions, drafting support, dispute notes, transaction legal due-diligence on a document set (data room / contract portfolio, with materiality and severity), batch clause review grids, material-contract schedules, and drafting corporate approval instruments (board/shareholder resolutions and minutes) for Vietnamese real-estate and M&A.
-version: 2.2.0
+version: 2.2.1
 license: Proprietary
 ---
 
@@ -192,6 +192,8 @@ Phải kéo `re-legal-licensing` nếu điều khoản phụ thuộc các vấn 
 Theo `references/transaction-dd-playbook.md`: (1) kiểm kê data room + map nhóm vấn đề, ghi gaps; (2) lọc theo materiality (ngưỡng lấy từ handoff/dossier, không tự bịa); (3) trích issue theo bộ rà chuẩn + Quote-First, nhiều tài liệu cùng loại dùng tabular review; (4) phát biểu finding theo format bắt buộc, kiểm chứng luật qua `legal`; (5) tổng hợp theo nhóm + bottom-line + gaps. Project-legal (đất/quy hoạch/permit) → kéo `re-legal-licensing`; điều phối DD đa stream → `re-inv-dd-coordinator`; CP/closing → `cp-closing-issue-note-template`. Đóng gói: `../../templates/transaction-dd-findings-memo.md`; schedule HĐ trọng yếu: `../../templates/material-contract-schedule.md`.
 
 Khi target là CTCP và rà **hồ sơ pháp lý doanh nghiệp (entity)**, dùng `references/corporate-legal-records-checklist-ctcp.md` làm DRL + lưới completeness 10 nhóm (request → Có/Thiếu/N/A → red flag → finding); xuất review grid trong reference đó hoặc cuộn narrative lên `transaction-dd-findings-memo`. Mục pháp lý **dự án** không đánh giá ở đây → `re-legal-licensing`.
+
+Khi cần soạn **câu hỏi bổ sung gửi seller** cho legal stream (clarification / management Q&A) hoặc chuyển red flag thành yêu cầu điều khoản: dùng ngân hàng 101 câu buy-side `../re-inv-dd-coordinator/references/buyside-dd-question-bank.md` — các chương Legal & Corporate (I, II, V, VIII, XI, XII, XV) là của lane này; cột "Contract impact" trong sách gốc nối thẳng finding → R&W / specific indemnity / CP / price mechanism (khớp `ma-clause-playbook-vn.md`).
 
 ## Quy trình Mode 5 — Văn kiện phê duyệt nội bộ
 

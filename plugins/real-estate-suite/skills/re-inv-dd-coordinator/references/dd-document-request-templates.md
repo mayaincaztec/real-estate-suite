@@ -165,6 +165,8 @@
 
 ## 3. Clarification Question Bank
 
+> Bản rút gọn khởi động nhanh. **Bản đầy đủ 101 câu** theo 15 chương (kèm map workstream/owner, Clean answer + Red flags + Contract impact trong sách gốc): `buyside-dd-question-bank.md`.
+
 ### Legal
 - "Xin cung cấp xác nhận của tất cả cổ đông hiện hữu rằng không tồn tại quyền ưu tiên mua (ROFR) nào chưa được tiết lộ?"
 - "Có bất kỳ cam kết nào của công ty với bên thứ ba sẽ bị kích hoạt khi thay đổi kiểm soát không?"

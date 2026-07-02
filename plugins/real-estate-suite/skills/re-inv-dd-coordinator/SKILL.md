@@ -1,7 +1,7 @@
 ---
 name: re-inv-dd-coordinator
 description: Use to coordinate multi-workstream due diligence (DD) in RE-Investment-Finance — DD scope, document request list, data room tracker with new-upload triage, clarification log, issue tracker, closing checklist (conditions precedent and closing deliverables), and the consolidated DD findings report; pulls RE-Legal specialists only for deep legal findings.
-version: 3.0.0
+version: 3.1.0
 license: Proprietary
 ---
 
@@ -70,6 +70,8 @@ Thiết lập các lớp điều phối phù hợp:
 - DD timeline / milestone view.
 
 Không yêu cầu mọi task đều phải có đủ tất cả lớp; chọn theo quy mô deal.
+
+**Clarification tracker & Q&A:** khi soạn câu hỏi gửi seller (clarification log) hoặc chuẩn bị management Q&A session, dùng `references/buyside-dd-question-bank.md` — 101 câu hỏi buy-side theo 15 chương, đã map sẵn workstream/owner; chọn lọc theo scope Bước 1, không bắn cả 101. Mỗi red flag phát hiện từ câu trả lời → issue tracker; phần chuyển finding thành điều khoản SPA giao `re-legal-counsel`.
 
 **New-upload triage (on-demand, không phải cron):** khi data room có tài liệu mới, đối chiếu thời điểm rà gần nhất → liệt kê tài liệu thêm từ lần trước; map vào nhóm theo DRL; **cờ ưu tiên cao** cho 3 nhóm: hợp đồng trọng yếu (Material Contracts), tranh chấp/tố tụng (Litigation), sở hữu trí tuệ (IP). Output: số tài liệu mới + breakdown theo nhóm ưu tiên (kèm tên file) + phần còn lại theo nhóm. Skill này **chỉ cờ để người rà**, không đọc nội dung — đọc & trích issue là việc của `re-legal-counsel` (theo `transaction-dd-playbook`).
 
@@ -156,7 +158,8 @@ Theo `../../templates/closing-checklist.md` — báo cáo 3 tầng (🔴 blockin
 
 ## References
 
-- `references/dd-document-request-templates.md`
+- `references/dd-document-request-templates.md` — DRL chuẩn share deal BĐS, red flags checklist, clarification bank rút gọn
+- `references/buyside-dd-question-bank.md` — 101 câu hỏi buy-side (15 chương, map workstream/owner) cho kickoff / clarification log / management Q&A; mỗi câu trong sách gốc có Clean answer + Red flags + Contract impact
 
 ## Lỗi thường gặp
 
