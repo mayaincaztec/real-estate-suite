@@ -1,7 +1,7 @@
 ---
 name: re-legal-counsel
 description: Use for contract and transaction legal work in RE-Legal — contract review, clause risk, negotiation positions, drafting support, dispute notes, transaction legal due-diligence on a document set (data room / contract portfolio, with materiality and severity), batch clause review grids, material-contract schedules, and drafting corporate approval instruments (board/shareholder resolutions and minutes) for Vietnamese real-estate and M&A.
-version: 2.2.1
+version: 2.3.0
 license: Proprietary
 ---
 
@@ -174,6 +174,8 @@ Với từng issue quan trọng, nên trả lời đủ:
 - fallback nếu đối tác không chấp nhận;
 - mức ưu tiên.
 
+Khi cần ngôn ngữ thay thế cho một cơ chế chuẩn (escrow, earn-out, drag-along, liquidation preference...), lấy điểm khởi đầu từ Sample Clause trong từ điển (`references/ma-dictionary-index.md` → mở entry trong file gốc), rồi điều chỉnh theo deal facts và ánh xạ luật VN.
+
 ### Bước 7 — Kiểm tra xem có cần kéo `re-legal-licensing` không
 Phải kéo `re-legal-licensing` nếu điều khoản phụ thuộc các vấn đề như:
 - điều kiện chuyển nhượng dự án;
@@ -274,6 +276,7 @@ Trong case đó, `RE-Legal` vẫn làm contract memo / legal note, nhưng **coor
 - Nội dung, workflow và output guidance viết bằng tiếng Việt.
 - Chỉ dùng tiếng Anh khi không có từ Việt tương đương tự nhiên hoặc cần giữ thuật ngữ chuẩn giao dịch.
 - Với thuật ngữ quan trọng, ưu tiên cách viết **Việt ngữ (Anh ngữ)** nếu giúp giữ đúng nghĩa.
+- Thuật ngữ M&A/SSA/SHA chưa chắc nghĩa hoặc cần định nghĩa chuẩn/Plain English: tra `references/ma-dictionary-index.md`.
 
 ## References
 
@@ -283,6 +286,7 @@ Dùng khi cần đào sâu guide theo loại tài liệu:
 - `references/ma-clause-playbook-vn.md` — 10 điều khoản M&A trọng yếu (R&W, Indemnification, MAC, Earn-out, Escrow, Drag/Tag-along, ROFR/ROFO, Non-compete sau M&A, CP, SHA vs Điều lệ) đối chiếu **căn cứ pháp lý Việt Nam** cụ thể (BLDS/LDN/án lệ VIAC) — dùng cùng `ma-document-guides.md`
 - `references/ma-traps-catalog.md` — catalog 50 bẫy điều khoản M&A (SPA/SSA/SHA) theo nhóm + chủ đề **bẫy cộng hưởng** (đọc chéo định nghĩa); lens **review/redline**; jurisdiction-neutral, overlay VN qua `ma-clause-playbook-vn.md`
 - `references/ma-negotiation-briefs.md` — 50 brief đàm phán M&A (10 phần) với lập luận both-sides + **fair middle ground** thị trường; lens **negotiation/prep**; dùng cùng `negotiation-and-dispute-playbook.md`
+- `references/ma-dictionary-index.md` — chỉ mục ~260 thuật ngữ M&A/SSA/SHA của The M&A Dictionary (mỗi entry gốc: Legal Definition · Plain English · Sample Clause · When Applied); tra khi gặp thuật ngữ lạ trong term sheet, cần sample clause khi drafting, hoặc cần giải thích Plain English cho business
 - `references/contract-reading-review-method.md` — kỹ thuật cụ thể hoá Quote-First: 7 nguyên tắc + quy trình 7 vòng đọc, áp dụng mọi loại hợp đồng
 - `references/transaction-document-family-map.md`
 - `references/cp-closing-and-structuring-support.md`

@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.20.0 - 2026-07-02
+
+### re-legal-counsel: M&A dictionary index (from "The M&A Dictionary")
+Integrated Herman, Henry & Dominic's *"The M&A Dictionary"* (Edition I, 2026) into `re-legal-counsel` (v2.3.0).
+- New reference `references/ma-dictionary-index.md`: A–Z index of ~260 M&A/SSA/SHA terms so the skill knows what the dictionary covers and can open the right entry in the gitignored source (each entry: Legal Definition · Plain English · Sample Clause · When Applied). Includes a when-to-use table (term-sheet review, drafting sample clauses, negotiation prep, plain-English explanation for business, dispute definition checks) and usage rules (common-law baseline — VN mapping via `ma-clause-playbook-vn.md` + MCP `legal`; sample clauses are starting points, not market standards; jurisdiction-tagged terms flagged).
+- SKILL.md wiring: Bước 6 (fallback language → Sample Clause lookup), Quy tắc ngôn ngữ (term lookup), References. Recovered page-header-masked entries during indexing (Closing, Covenant, Drag-Along, Governing Law, Indemnification, Merger, Pari Passu, Standstill, Tag-Along, Valuation Cap, Waiver, Synergies…).
+
 ## 0.19.0 - 2026-07-02
 
 ### DD process: buy-side question bank (from "Ask Smarter — 101 Questions for the Buy-Side")
